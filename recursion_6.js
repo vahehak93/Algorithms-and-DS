@@ -1,5 +1,5 @@
 /*Given an array and a number N. Write a recursive function that rotates an array N
-places to the left. (Hint: to add element to the beginning use arr.unshift()) */
+places to the left. (Hint: to add element to the beginning use arr.unshift())    */
 
 function recursiveRotate(arr, index) {
   if (index < arr.length) {
