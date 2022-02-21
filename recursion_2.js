@@ -1,5 +1,5 @@
 /* Given an array of numbers. Write a recursive function to find its minimal positive
- element. (if such element does not exist, return -1).*/
+ element. (if such element does not exist, return -1).       */
 
 function recursivePosMin(arr) {
   if (arr.length < 2) {
