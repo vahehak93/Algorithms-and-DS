@@ -1,3 +1,6 @@
+// Implement merge sort
+
+
 function merge(left, right) {
   let arr = [];
   while (left.length && right.length) {
