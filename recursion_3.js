@@ -1,5 +1,5 @@
-// Given an array of numbers which is almost sorted in ascending order. Find the index
-// where sorting order is violated.
+/* Given an array of numbers which is almost sorted in ascending order. Find the index
+where sorting order is violated.*/
 
 function ascendingCheck(arr, count = 0) {
   if (arr.length < 2) {
