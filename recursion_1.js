@@ -1,21 +1,18 @@
 // Write a recursive function to determine whether all digits of the number are odd or not.
 
 function recursiveOdd(num) {
-  num = num.slice(0, -1);
-  let last_digit = num.slice(-1);
   let oddCounter = 0;
-  if (num.length) {
-    if (last_digit % 2 === 0) {
+  if (num.length >= 0)
+    if (num[0] % 2 === 0) {
       return false;
     } else {
       oddCounter += 1;
     }
+  if (oddCounter === num.length) {
+    return true;
   }
-  if (oddCounter === num.length-1) {
-      return true
-  }
-  return recursiveOdd(num);
+
+  return recursiveOdd(num.slice(1));
 }
 
-console.log(recursiveOdd("1357291937"));
-
+console.log(recursiveOdd("1135922"));
