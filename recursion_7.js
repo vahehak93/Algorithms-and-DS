@@ -1,6 +1,6 @@
 /*Given a number. Write a function that calculates its sum of the digits and if that sum has
 more than 1 digit find the sum of digits of that number. Repeat that process if needed
-and return the result. */
+and return the result.      */
 
 function recursiveSum(num) {
   let str = String(num);
@@ -14,7 +14,7 @@ function recursiveSum(num) {
     num = sum;
     return recursiveSum(num);
   }
-  return merg res[0];
+  return res[0];
 }
 
 let num = "1235";
